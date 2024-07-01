@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Library Manager</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Book Library Manager</h1>
+  <img class="center" alt="PageDart.com"  style="width:300px;height:200px;" src="https://images.unsplash.com/photo-1591131246958-148222606311?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTk4NjIwMTF8&ixlib=rb-4.0.3&q=85"> 
+  <br></br>
+    <form id="bookForm">
+        <input type="text" id="titleInput" placeholder="Title" required>
+        <input type="text" id="authorInput" placeholder="Author" required>
+        <input type="number" id="pagesInput" placeholder="Pages" required>
+        <button type="submit">Add Book</button>
+    </form>
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
